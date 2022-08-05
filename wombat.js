@@ -253,7 +253,7 @@ async function solvingCaptcha(){
 	console.log("solving captcha: " + captcha_counter)
 	let response;
 	let fail = false;
-	let fetchurl = "https://2captcha.com/in.php?key=" +  API_KEY + "&invisible=1&soft_id=2834&json=1&method=userrecaptcha&googlekey=6LdGt4geAAAAAFaiitJYG4E7GPfcVJSQ9vs0QYIb&pageurl=https://dungeon.wombat.app/dungeon&header_acao=1"
+	let fetchurl = "https://2captcha.com/in.php?key=" +  API_KEY + "&invisible=1&soft_id=3428&json=1&method=userrecaptcha&googlekey=6LdGt4geAAAAAFaiitJYG4E7GPfcVJSQ9vs0QYIb&pageurl=https://dungeon.wombat.app/dungeon&header_acao=1"
 	let req = await fetch(fetchurl).then(res=>res.json())
 	setTimeout(function(){fail = true}, 180000)
 	while(!response){
